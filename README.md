@@ -12,6 +12,6 @@ The "HW1" repository has eigth sub-directories: "Products", "Scatta con noi", "A
 
 ![image](https://user-images.githubusercontent.com/79788825/119374996-91bdb500-bcba-11eb-9499-78332532cd1b.png)
 
-
+ 
 ## ROADMAP
 4th step of 5.
