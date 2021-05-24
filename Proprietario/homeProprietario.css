@@ -1,0 +1,311 @@
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    font-size: 7vh;
+    color: white;
+    text-align: center;
+}
+.hidden{
+    display: none;
+}
+
+.visualizzaDOT{
+    height:100vh;
+    width: 100vw;
+    background-color: white;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0; 
+    bottom: 0;
+}
+
+.no-scroll{
+    overflow: hidden;
+}
+
+
+.container {
+    margin: 0 50px;
+    width: fit-content;
+    height: auto;
+}
+.container .dot {
+    height: 12px;
+    width: 12px;
+    background-color:rgba(191, 133, 99, 0.7);
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 50px;
+}
+.container:nth-child(1) .dot {
+    animation: dotLoaders 0.9s linear infinite forwards;
+  
+}
+
+#dot1 {
+    animation-delay: 0.25s;
+  }
+  #dot2 {
+    animation-delay: 0.5s;
+  }
+  #dot3 {
+    animation-delay: 0.75s;
+  }
+  @keyframes dotLoaders {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+}
+nav{
+    background-color: rgba(191, 133, 99, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.5em;
+    z-index: 2;
+}
+
+#menu{
+    display: none;
+}
+
+#link{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 3vw;
+}
+
+#menu div {
+    width: 7vw;
+    height: 0.5vh;
+    background-color: white;
+    margin: 0.7vh 0;
+}
+
+#link a{
+    margin-left: 2vw;
+    z-index: 1;
+    color: white;
+    text-decoration: none;
+}
+
+li a{
+    color: rgba(191, 133, 99, 0.7);
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 0 2vw;
+}
+
+#link a:hover{
+    font-weight: bold;
+}
+
+#nome{
+    margin-left: 3vw;
+    z-index: 1;
+    font-size: 1.5em;
+    font-weight: bolder;
+    border: 1px solid white;
+    padding: 2px 4px;
+    background-color: rgba(256, 256, 256, 0.3);
+}
+
+header{
+    background-image: url("../immagini/PiazzaSanMarco.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    padding-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+header::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+header p{
+    font-size: 0.8em;
+    z-index: 1;
+}
+
+#intestazione{
+    z-index: 1;
+    font-size: 1.5em;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: rgba(43, 22, 10, 0.7);
+    padding: 3%;
+}
+
+th, td{
+    color: rgba(43, 22, 10, 0.7);
+    border: 1px solid rgba(43, 22, 10, 0.7);
+    text-align: center;
+    font-weight: bold;
+}
+
+th{
+    background-color: rgba(191, 133, 99, 0.7);
+}
+
+td{
+    font-weight: normal;
+    background-color: whitesmoke;
+}
+
+ul, li{
+    list-style: none;
+    margin: 0;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+
+table{
+    margin: 2%;
+    border-collapse: collapse;
+}
+
+table img{
+    width: 40px;
+    opacity: 0;
+}
+
+table img:hover{
+    opacity: 1;
+}
+
+article{
+    margin: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+h5{
+    margin: 0;
+}
+
+input{
+    width: 200px;
+    border-radius: 7px;
+    border: 1px solid rgba(43, 22, 10, 0.7);
+    margin: 2%;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+    border: 1px solid rgba(43, 22, 10, 0.7);
+}
+
+input:focus{
+    outline: none;
+}
+
+footer{
+    color: white;
+    background-color: rgba(191, 133, 99, 0.7);
+    margin-bottom: 0px;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.5em;
+    text-transform: capitalize;
+}
+
+#utils{
+    font-size: 1rem;
+    margin-left: 5vw;
+}
+
+footer .logo{
+    margin-right: 5vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer img{
+    height: 5vh;
+}
+
+footer p{
+    font-size: 2rem;
+}
+
+@media (max-width:1200px){
+    nav{
+        height: 10vh;
+    }
+    #link{
+        display: none;
+    }
+
+    #menu{
+        display: block;
+        margin-right: 5vw;
+    }
+}
+
+
+@media(max-width:600px){
+    footer{
+        height: 10vh;
+    }
+
+    footer .logo img{
+        height: 30%;
+    }
+
+    footer .logo p{
+        font-size: 20px;
+    }
+
+    footer #utils{
+        font-size: 15px;
+    }
+}

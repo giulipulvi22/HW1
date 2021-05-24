@@ -1,0 +1,573 @@
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    font-size: 7vh;
+    color: white;
+    text-align: center;
+}
+
+
+nav{
+    background-color: rgba(191, 133, 99, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.5em;
+    z-index: 2;
+}
+
+#menu{
+    display: none;
+}
+
+#link{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 3vw;
+}
+
+#menu div {
+    width: 7vw;
+    height: 0.5vh;
+    background-color: white;
+    margin: 0.7vh 0;
+}
+
+#link a{
+    margin-left: 2vw;
+    z-index: 1;
+    color: white;
+    text-decoration: none;
+}
+
+#link a:hover{
+    font-weight: bold;
+}
+
+#nome{
+    margin-left: 3vw;
+    z-index: 1;
+    font-size: 1.5em;
+    font-weight: bolder;
+    border: 1px solid white;
+    padding: 2px 4px;
+    background-color: rgba(256, 256, 256, 0.3);
+}
+
+.visualizzaDOT{
+    height:100vh;
+    width: 100vw;
+    background-color: white;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top: 0; 
+    bottom: 0;
+}
+
+.no-scroll{
+    overflow: hidden;
+}
+
+
+.container {
+    margin: 0 50px;
+    width: fit-content;
+    height: auto;
+}
+.container .dot {
+    height: 12px;
+    width: 12px;
+    background-color:rgba(191, 133, 99, 0.7);
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 50px;
+}
+.container:nth-child(1) .dot {
+    animation: dotLoaders 0.9s linear infinite forwards;
+  
+}
+
+#dot1 {
+    animation-delay: 0.25s;
+  }
+  #dot2 {
+    animation-delay: 0.5s;
+  }
+  #dot3 {
+    animation-delay: 0.75s;
+  }
+  @keyframes dotLoaders {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+}
+
+header{
+    background-image: url("../immagini/PiazzaSanMarco.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    padding-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.noOrder::before,header::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+header p{
+    font-size: 0.8em;
+    z-index: 1;
+}
+
+#intestazione{
+    z-index: 1;
+    font-size: 1.5em;
+}
+/*section*/
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5vh 5vw;
+    background-color: rgba(191, 133, 99, 0.2);
+}
+
+.dati, #recensioni{
+    width: 100%;
+    height: 500px;
+    margin: 5vh 0;
+}
+
+h6{
+    margin: 0;
+    color:rgba(38, 16, 8, 0.8);
+}
+
+.dati{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#ordini, #carrello{
+    width: 60%;
+    height: 100%;
+}
+#ordini, #carrello, #recensioni, #dati, #preferiti{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+}
+#dati, #preferiti{
+    width: 35%;
+    height: 100%;
+}
+
+.content{
+    height: 90%;
+    width: 100%;
+    background-color: whitesmoke;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    position: relative;
+    overflow-x: auto;
+    align-items: center;
+    justify-content: center;
+}
+.background, .list{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+
+}
+.block, .ciao{
+    height: 80%;
+    width: 300px;
+    margin: 2%;
+    padding: 2%;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#infoUser{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+.descrizione{
+    font-size: 20px;
+    margin: 0;
+}
+.linea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90%;
+    border-bottom: 1px solid rgba(38, 16, 8, 1);
+    margin: 1%;
+    font-size: 1rem;
+}
+.linea p{
+    margin: 0;
+}
+input{
+    border: 1px solid rgba(38, 16, 8, 1);
+    border-radius: 100px;
+    height: 45px;
+    width: 400px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0 2%;
+    background-color: whitesmoke;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.3);
+}
+input:focus{
+    outline: unset;
+}
+#indicazioni{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    border-radius: 17px;
+    width: 415px;
+    height: 60vh;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.3);
+    background-color: rgba(191, 133, 99, 0.5);
+    margin: 0 5vw;
+}
+.orderRequest{
+    height: 50vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.3);
+    color:rgba(38, 16, 8, 0.8);
+    font-size: 1.5rem;
+    padding: 2%;
+}
+.orderRequest p{
+    margin: 0;
+}
+.buttons{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.block img{
+    height: 20px;
+    width: 20px;
+}
+.noOrder{
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    font-size: 0.8em;
+    color: whitesmoke;
+}
+.noOrder p{
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.noOrder a{
+    color: white;
+    text-decoration: none;
+    z-index: 1;
+}
+
+/*footer*/
+footer{
+    color: white;
+    background-color: rgba(191, 133, 99, 0.7);
+    margin-bottom: 0px;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.5em;
+    text-transform: capitalize;
+}
+
+#utils{
+    font-size: 1rem;
+    margin-left: 5vw;
+}
+
+footer .logo{
+    margin-right: 5vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer img{
+    height: 5vh;
+}
+
+footer p{
+    font-size: 2rem;
+}
+
+/*Foto full screen*/
+
+.visualizza{
+    height:100vh;
+    width: 100vw;
+    background-color: rgba(94, 43, 43, 0.5);
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0; 
+    bottom: 0;
+}
+
+.visualizza img{
+    height: 95%;
+    width: 95%;   
+    object-fit: contain;
+}
+.testoRec{
+    font-size: 1rem;
+}
+.no-scroll{
+    overflow: hidden;
+}
+
+.nochart:hover{
+    cursor:not-allowed;
+}
+#ratings{
+    width: 30%;
+    height: 40px;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+}
+
+#ratings input[name="rating"] { display: none; }
+#ratings input[name="rating"] + label:after { content: none; }
+#ratings input[name="rating"] + label:before {
+    background-color: transparent;
+    content: url("../immagini/filledstar.png");
+}
+#ratings input[name="rating"]:checked ~ label:before {
+    background-color: transparent;
+    border: none;
+    content: url('../immagini/emptystar.png');
+}
+#ratings input[name="rating"]:checked + label:before {content: url('../immagini/filledstar.png'); }
+#ratings input[name="rating"] + label:hover ~ input + label:before { opacity: 0.6; }
+textarea{
+    width: 30%;
+    height: 30%;
+    border-radius: 15px;
+    padding: 2%;
+    resize: none;
+}
+.visualizza button{
+    text-align: center;
+    height: 20px;
+    width: 80px;
+    border-radius: 15px;
+}
+ 
+
+
+
+/*Regolazioni per iPad Pro e schermi di dimensioni minori*/
+@media (max-width:1200px){
+    nav{
+        height: 10vh;
+    }
+    #link{
+        display: none;
+    }
+
+    #menu{
+        display: block;
+        margin-right: 5vw;
+    }
+}
+
+@media (max-width:1200px) {
+    .item p {
+        font-size: 26px;
+        width: 80vw;
+    }
+
+    .button2{
+        font-size: 14px;
+        width: 30vw;
+        padding: 3px;
+    }
+
+    .button1{
+        width: 20vw;
+    }
+}
+
+@media (max-width:1200px){
+
+    #filtri{
+        flex-direction: column;
+        padding: 1vh 0;
+    }
+
+    .dati{
+        flex-direction: column;
+        height: 125vh;
+    }
+
+    #infoUser, #ordini, #preferiti, #carrello, #dati{
+        width: 90vw;
+        margin: 2vh 0;
+    }
+    .content{
+        flex-direction: column;
+        overflow-y:hidden;
+        overflow-x: auto;
+        height: 50vh;
+    }
+    input{
+        width: 40vw;
+    }
+    .item{
+        width: 90vw;
+    }
+    article{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .background{
+        width: 100%;
+    }
+
+    #elementi div{
+        width: 20vw;
+        width: 10vh;
+        margin: 5%;
+    }
+
+    #elementi div img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+/*regolazioni per schermi < 600px*/
+@media (max-width:600px) {
+    .item p {
+        font-size: 16px;
+    }
+
+    .dati{
+        height: 150vh;
+    }
+
+    .content{
+        height: 70vh;
+    }
+
+
+    .button2{
+        font-size: 14px;
+        width: 40vw;
+        padding: 3px;
+    }
+}
+
+@media(max-width:600px){
+    footer{
+        height: 10vh;
+    }
+
+    footer .logo img{
+        height: 30%;
+    }
+
+    footer .logo p{
+        font-size: 20px;
+    }
+
+    footer #utils{
+        font-size: 15px;
+    }
+}
+
+
+/*regolazioni per iPhone 5 e schermi minori*/
+@media (max-width:450px) {
+    .foto h1 {
+        font-size: 25px;
+    }
+
+    #intestazione{
+        font-size: 30px;
+    }
+}
+
