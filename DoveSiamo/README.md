@@ -11,20 +11,13 @@ This web site is divided in 5 sections:
 - Scatta con noi: a page where users can find tips about photography and information about places where to go when planning a trip;
 - User Area: info about the items that the costumer has saved and it's going to buy. / Management Area: a page where the owner of the shop can handle all the data of the shop.
 
-    ### SCATTA CON NOI
-    The "Scatta con noi" page is reachable from the Home Page by clicking its button. This is a page where the photographers give tips to the clients that are interest in
-    particular kinds of photography. By **_YouTube API not REST_** I have included in the section of this page a Youtube video player with videos concerning photography.
-    Also there is a section, created with **_IPGeolocation REST API with APIKey authentication_** where everyone can **search** information about a particular place in a
-    particular day and see the position of the searched place in a map, introduced from **_Bing Maps API not REST_**. Users don't need to be logged to visit this page.
-    
-    **_YouTube API not REST_**: https://developers.google.com/youtube/iframe_api_reference
-    **_IPGeolocation REST API with APIKey authentication_**: https://ipgeolocation.io/astronomy-api.html.
-    
+    ### DOVE SIAMO
+    The "Dove Siamo" page shows a map obtained from **_"Bing Maps API"_**. This isn't a REST API but I inserted it anyway because it's useful for the page. 
+    On the right side of the map there is a list with info & contancts about the shop.
+    **_"Bing Maps API"_**: https://docs.microsoft.com/en-us/
 
 ## VISUALS
-
-![image](https://user-images.githubusercontent.com/79788825/115931977-601fb700-a48c-11eb-92cd-b9f77c54d423.png)
-![image](https://user-images.githubusercontent.com/79788825/115932095-89404780-a48c-11eb-875e-7bfb5319492d.png)
+![image](https://user-images.githubusercontent.com/79788825/115903409-d52ac680-a463-11eb-8418-aed8e834fddf.png)
 
 
 ## INSTALLATION
